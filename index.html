@@ -3,35 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>马来语学习闪卡</title>
+<title>Y5BMKEJAANAPR</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        primary: '#4A90E2',
-        secondary: '#82B1FF'
-      },
-      borderRadius: {
-        'none': '0px',
-        'sm': '2px',
-        DEFAULT: '4px',
-        'md': '8px',
-        'lg': '12px',
-        'xl': '16px',
-        '2xl': '20px',
-        '3xl': '24px',
-        'full': '9999px',
-        'button': '4px'
-      }
-    }
-  }
-}
-</script>
 <style>
 :root {
   --blue-theme: #E3F2FD;
@@ -41,16 +17,11 @@ tailwind.config = {
 }
 .flashcard-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   padding: 20px;
   max-width: 1440px;
   margin: 0 auto;
-}
-@media (max-width: 1200px) {
-  .flashcard-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media (max-width: 768px) {
   .flashcard-container {
@@ -66,7 +37,7 @@ tailwind.config = {
 .group-3 { background-color: var(--orange-theme); }
 .group-4 { background-color: var(--purple-theme); }
 .card {
-  width: 300px;
+  width: 100%;
   height: 200px;
   margin: 15px auto;
   perspective: 1000px;
@@ -81,9 +52,6 @@ tailwind.config = {
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
-}
-.card:hover .card-inner {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 .card.flipped .card-inner {
   transform: rotateY(180deg);
@@ -142,26 +110,6 @@ tailwind.config = {
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          好处
-        </div>
-        <div class="card-back">
-          Kebaikan=manfaat=faedah
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          填补空闲时间
-        </div>
-        <div class="card-back">
-          Mengisi masa lapang
-        </div>
-      </div>
-    </div>
   </section>
   <section class="card-group group-2">
     <h2 class="group-title">15-21/4</h2>
@@ -182,112 +130,6 @@ tailwind.config = {
         </div>
         <div class="card-back">
           Contohnya = Misalnya
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          这是因为
-        </div>
-        <div class="card-back">
-          Hal ini demikian kerana
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          优秀的成绩
-        </div>
-        <div class="card-back">
-          keputusan yang cemerlang
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="card-group group-3">
-    <h2 class="group-title">22-28/4</h2>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          管理时间
-        </div>
-        <div class="card-back">
-          Menguruskan masa
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          分享意见
-        </div>
-        <div class="card-back">
-          Berkongsi pendapat
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          其中一个
-        </div>
-        <div class="card-back">
-          Salah satu aktiviti
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          做出选择
-        </div>
-        <div class="card-back">
-          Membuat pilihan
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="card-group group-4">
-    <h2 class="group-title">1-7/4</h2>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          浪费可以被避免
-        </div>
-        <div class="card-back">
-          Pembaziran dapat dielakkan
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          举办 = 进行
-        </div>
-        <div class="card-back">
-          Mengadakan = menjalankan
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          随地扔垃圾
-        </div>
-        <div class="card-back">
-          membuang sampah merata-rata
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          开放式讨论
-        </div>
-        <div class="card-back">
-          Berbincang secara terbuka
         </div>
       </div>
     </div>
